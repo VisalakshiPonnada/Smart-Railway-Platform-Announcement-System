@@ -40,14 +40,15 @@ The controller continuously compares the **on-chip RTC** time against a stored *
 
 🏗️ System Architecture
 
-Module	      Function
-RTC Driver	  Maintains and reports current date/time
-LCD Driver	  Renders passenger dashboard and admin screens
-Keypad Driver	4×4 matrix scan for admin entry
-EINT0 Driver	Interrupt-driven admin-edit switch
-LED/Buzzer    Driver	Visual + audible status indication
-Train Database	In-memory schedule table
-Project Logic	 Next-train selection and dashboard logic
+| Module | Function |
+|--------|----------|
+| RTC Driver | Maintains and reports current date/time |
+| LCD Driver | Renders passenger dashboard and admin screens |
+| Keypad Driver | 4×4 matrix scan for admin entry |
+| EINT0 Driver | Interrupt-driven admin-edit switch |
+| LED/Buzzer Driver | Visual + audible status indication |
+| Train Database | In-memory schedule table |
+| Project Logic | Next-train selection and dashboard logic |
 
 
 
