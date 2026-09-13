@@ -40,15 +40,14 @@ The controller continuously compares the **on-chip RTC** time against a stored *
 
 🏗️ System Architecture
 
-  | Module | Function |
-
-| 🕒 RTC Driver | Maintains and reports current date/time (on-chip LPC2148 RTC peripheral) |
-| 🖥️ LCD Driver | Renders the passenger dashboard and admin-mode screens (16×2, 8-bit) |
-| ⌨️ Keypad Driver | 4×4 matrix scan for admin train-select / digit entry |
-| 🚨 EINT0 Driver | Interrupt-driven admin-edit switch, sets a flag consumed by the main loop |
-| 🚦 LED/Buzzer Driver | Visual + audible train status indication |
-| 🗄️ Train Database | In-memory schedule table (`TrainInfo_t[TOTAL_TRAINS]`) |
-| 🧠 Project Logic | Next-train selection, status classification, dashboard rendering, admin edit flows |
+Module	      Function
+RTC Driver	  Maintains and reports current date/time
+LCD Driver	  Renders passenger dashboard and admin screens
+Keypad Driver	4×4 matrix scan for admin entry
+EINT0 Driver	Interrupt-driven admin-edit switch
+LED/Buzzer    Driver	Visual + audible status indication
+Train Database	In-memory schedule table
+Project Logic	 Next-train selection and dashboard logic
 
 
 
