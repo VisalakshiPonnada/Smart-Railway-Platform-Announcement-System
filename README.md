@@ -70,7 +70,10 @@ The controller continuously compares the **on-chip RTC** time against a stored *
 | Embedded C | Programming |
 | Flash Magic | Programming the LPC2148 |
 
+📂 Repository Structure
+
 Smart-Railway-Platform-Clock-Announcement-Controller/
+
 ├── Images/                    
 ├── types.h                     
 ├── GPIO_defines.h             
