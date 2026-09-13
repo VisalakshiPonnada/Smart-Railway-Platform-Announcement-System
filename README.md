@@ -71,19 +71,19 @@ The controller continuously compares the **on-chip RTC** time against a stored *
 | Flash Magic | Programming the LPC2148 |
 
 Smart-Railway-Platform-Clock-Announcement-Controller/
-├── Images/                     # LCD screenshots / hardware photos go here
-├── types.h                     # Common project-wide typedefs
-├── GPIO_defines.h              # Central pin map (LCD, keypad, LEDs, buzzer, EINT0)
-├── delays.c / delays.h         # Busy-wait delay routines
-├── RTC.c / RTC.h                # On-chip RTC driver
-├── LCD.c / LCD.h                 # 16x2 HD44780 LCD driver (8-bit)
-├── KEYPAD.c / KEYPAD.h           # 4x4 matrix keypad driver
-├── EINT.c / EINT.h               # Admin-edit switch interrupt driver
-├── LED_BUZZER.c / LED_BUZZER.h  # Status LED + buzzer driver
-├── TrainDB.c / TrainDB.h        # Train schedule database (struct + data)
-├── project_functions.c / .h     # Dashboard logic, status classification, admin mode
-├── MAIN.c                       # Application entry point / main loop
-├── Startup.s                    # ARM7 vector table / stack init (Keil skeleton)
+├── Images/                    
+├── types.h                     
+├── GPIO_defines.h             
+├── delays.c / delays.h         
+├── RTC.c / RTC.h               
+├── LCD.c / LCD.h                
+├── KEYPAD.c / KEYPAD.h           
+├── EINT.c / EINT.h              
+├── LED_BUZZER.c / LED_BUZZER.h  
+├── TrainDB.c / TrainDB.h        
+├── project_functions.c / .h     
+├── MAIN.c                       
+├── Startup.s                   
 └── README.md
 
 
