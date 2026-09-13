@@ -50,5 +50,17 @@ The controller continuously compares the **on-chip RTC** time against a stored *
 | Train Database | In-memory schedule table |
 | Project Logic | Next-train selection and dashboard logic |
 
+⚙️ Hardware Requirements
+
+| Hardware | Quantity | Purpose |
+|---|---|---|
+| LPC2148 | 1 | Main Controller |
+| 16×2 LCD | 1 | Passenger Dashboard |
+| 4×4 Matrix Keypad | 1 | Admin Schedule/RTC Entry |
+| LEDs (Green/Yellow/Red) | 3 | Train Status Indication |
+| Buzzer | 1 | Audible Alert |
+| Admin-Edit Push Button | 1 | Triggers EINT0 config mode |
+| USB-UART Converter / DB-9 Cable | 1 | Flashing / Debug |
+
 
 
