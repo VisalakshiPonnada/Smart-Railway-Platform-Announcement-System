@@ -36,7 +36,7 @@ The controller continuously compares the **on-chip RTC** time against a stored *
 
 🖼️ Block Diagram
 
-![Smart Railway System Block Diagram](train_blockdiagram.png)
+![Smart Railway System Block Diagram](train_block_diagram.png)
 
 🏗️ System Architecture
 
