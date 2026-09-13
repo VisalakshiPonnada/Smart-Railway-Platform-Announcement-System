@@ -9,7 +9,6 @@ Smart-Railway-Platform-Announcement-System
 - ⚙️ Hardware Requirements
 - 💻 Software Requirements
 - 📂 Repository Structure
-- 🖥️ LCD Output Gallery
 - ✨ Features
 - ▶️ Build Instructions
 - 📈 Future Enhancements
