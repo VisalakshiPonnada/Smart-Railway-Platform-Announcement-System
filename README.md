@@ -89,5 +89,18 @@ Smart-Railway-Platform-Clock-Announcement-Controller/
 ├── Startup.s                   
 └── README.md
 
+✨ Features
+
+- ✅ Real-time RTC-based clock display
+- ✅ Automatic train schedule monitoring & switching
+- ✅ Three-tier LED status system (On-Time / Approaching / Delayed)
+- ✅ Buzzer alert when a train is approaching
+- ✅ Interrupt-driven admin configuration mode (EINT0)
+- ✅ Keypad-based train schedule editing (arrival/departure)
+- ✅ Keypad-based RTC date/time correction
+- ✅ Automatic delay computation relative to original schedule
+- ✅ Returns safely to the dashboard after admin edits — no restart needed
+- ✅ Modular, industry-standard driver structure (one driver per peripheral)
+
 
 
