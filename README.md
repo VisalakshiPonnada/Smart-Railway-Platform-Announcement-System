@@ -102,5 +102,19 @@ Smart-Railway-Platform-Clock-Announcement-Controller/
 - ✅ Returns safely to the dashboard after admin edits — no restart needed
 - ✅ Modular, industry-standard driver structure (one driver per peripheral)
 
+📈 Future Enhancements
+
+- ⏱️ Multiple-day / recurring schedule support (beyond `TOTAL_TRAINS = 3`)
+- 🔊 Recorded voice announcements via an audio module (in place of the buzzer)
+- 📶 Remote schedule updates over UART/Wi-Fi instead of local keypad entry
+- 🗃️ Non-volatile storage (EEPROM) for the train database, surviving power loss
+- 🧭 Multi-platform support (several LCD/keypad stations sharing one RTC)
+- 🛠️ Admin PIN/password protection before allowing schedule edits
+- 📊 Event logging of all delays and admin edits for later review
+
+👤 Author
+
+Visalakshi Ponnada
+Embedded Systems | Embedded C | ARM7 | RTC | LCD/Keypad Interfacing
 
 
