@@ -62,5 +62,29 @@ The controller continuously compares the **on-chip RTC** time against a stored *
 | Admin-Edit Push Button | 1 | Triggers EINT0 config mode |
 | USB-UART Converter / DB-9 Cable | 1 | Flashing / Debug |
 
+💻 Software Requirements
+
+| Software | Purpose |
+|---|---|
+| Keil µVision | Development / Build |
+| Embedded C | Programming |
+| Flash Magic | Programming the LPC2148 |
+
+Smart-Railway-Platform-Clock-Announcement-Controller/
+├── Images/                     # LCD screenshots / hardware photos go here
+├── types.h                     # Common project-wide typedefs
+├── GPIO_defines.h              # Central pin map (LCD, keypad, LEDs, buzzer, EINT0)
+├── delays.c / delays.h         # Busy-wait delay routines
+├── RTC.c / RTC.h                # On-chip RTC driver
+├── LCD.c / LCD.h                 # 16x2 HD44780 LCD driver (8-bit)
+├── KEYPAD.c / KEYPAD.h           # 4x4 matrix keypad driver
+├── EINT.c / EINT.h               # Admin-edit switch interrupt driver
+├── LED_BUZZER.c / LED_BUZZER.h  # Status LED + buzzer driver
+├── TrainDB.c / TrainDB.h        # Train schedule database (struct + data)
+├── project_functions.c / .h     # Dashboard logic, status classification, admin mode
+├── MAIN.c                       # Application entry point / main loop
+├── Startup.s                    # ARM7 vector table / stack init (Keil skeleton)
+└── README.md
+
 
 
