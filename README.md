@@ -36,18 +36,7 @@ The controller continuously compares the **on-chip RTC** time against a stored *
 
 🖼️ Block Diagram
 
-                 ┌───────────────────────────────┐
-   KEYPAD ─────► │                                 │
-   (4x4)         │                                 │──────► LCD (16x2)
-                 │                                 │
-                 │           LPC2148                │──────► GREEN LED  (On-Time)
-   ADMIN SW ───► │   [ RTC | EINT | GPIO | CORE ]   │──────► YELLOW LED (Approaching)
-   (EINT0)       │                                 │──────► RED LED    (Delayed)
-                 │                                 │
-                 │                                 │──────► BUZZER
-                 └───────────────────────────────┘
-
-**Flow:** RTC → compare with `TrainDB[]` → classify status → render LCD dashboard → drive LED/buzzer. An EINT0 falling edge from the admin switch pauses this loop and hands control to the keypad-driven `AdminEditMode()`.
+![Smart Railway System Block Diagram](train_blockdiagram.png)
 
 🏗️ System Architecture
 
