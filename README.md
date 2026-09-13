@@ -102,6 +102,15 @@ Smart-Railway-Platform-Clock-Announcement-Controller/
 - ✅ Returns safely to the dashboard after admin edits — no restart needed
 - ✅ Modular, industry-standard driver structure (one driver per peripheral)
 
+▶️ Build Instructions
+
+1. Open the project in **Keil µVision** (create a new LPC2148 project and add all `.c`/`.h`/`.s` files from this repo).
+2. Build the project.
+3. Flash the generated `.hex` to the LPC2148 using **Flash Magic** over the USB-UART / DB-9 connection.
+4. Wire up the LCD, keypad, LEDs, buzzer, and admin switch per the [Pin Mapping](#-pin-mapping) table.
+5. Power ON the board.
+6. Observe the LCD dashboard; press the admin switch to enter config mode at any time.
+
 📈 Future Enhancements
 
 - ⏱️ Multiple-day / recurring schedule support (beyond `TOTAL_TRAINS = 3`)
